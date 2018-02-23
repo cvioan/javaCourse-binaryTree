@@ -2,6 +2,7 @@ package com.cioan.orderedBinaryTree;
 
 import java.util.Stack;
 
+@SuppressWarnings("WeakerAccess")
 public class Node {
     private static Stack<Node> nodes = null;
     private int value;
@@ -28,14 +29,6 @@ public class Node {
                 createChild(currentNode.right, i);
             }
         }
-    }
-
-    public int getValue() {
-        return value;
-    }
-
-    public void setValue(int value) {
-        this.value = value;
     }
 
     public Node getLeft() {
